@@ -16,83 +16,25 @@ public class Player {
         this.weight = weight;
         this.height = height;
         this.nationality = nationality;
-        this.active = true;
-
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public boolean getDt() {
-        return dt;
-    }
-
-    public void setDt(boolean dt) {
-        this.dt = dt;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public String getNationality() {
-        return nationality;
-    }
-
-    public void setNationality(String nationality) {
-        this.nationality = nationality;
-    }
-
-    public boolean getActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
         this.active = active;
+
     }
-
-    @Override
-    public String toString() {
-        return "Jugador{" +
-                "nombre='" + name + '\'' +
-                ", edad=" + age +
-                ", entrenador=" + dt +
-                ", posicion=" + position + "}";
-
-
-
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + name);
+        System.out.println("Edad: " + age);
+        System.out.println("Director Técnico: " + dt);
+        System.out.println("Posición: " + position);
+        System.out.println("Peso: " + weight + " kg");
+        System.out.println("Altura: " + height + " m");
+        System.out.println("Nacionalidad: " + nationality);
+        System.out.println("¿Activo?: " + (active ? "Sí" : "No"));
+        System.out.println("--------------------------------");
     }
 }
+
+
+
+
+
+
+

@@ -8,9 +8,23 @@ public class Team {
 
     public Team(String name, String city, String stadium) {
         this.name = name;
-    }
-    public void addPlayer(Player player){
-        this.players.add(player);
+        this.city = city;
+        this.players = new ArrayList<>();
     }
 
+    public void agregarJugador(Player player) {
+        players.add(player);
+    }
+
+    public void mostrarEquipo() {
+        System.out.println("=== Equipo: " + name + " ===");
+        System.out.println("Ciudad: " + city);
+        System.out.println("Jugadores:");
+        for (Player j : players) {
+            j.mostrarInfo();
+        }
+    }
 }
+
+
+
